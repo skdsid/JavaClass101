@@ -1,0 +1,18 @@
+number=int(input("자리수의 합을 계산합니다. 숫자를 입력해주세요"))
+
+a=number//10000 #입력한 값에 10000을 나눈 후, 몫을 a에 저장 한다.
+number%=10000 #입력한 값에 10000을 나눈 후, 나머지 값을 number에 저장한다. 후의 코드도 동일하다.
+
+b=number//1000
+number%=1000
+
+c=number//100
+number%=100
+
+d=number//10
+number%=10
+
+f=number//1
+number%=1
+
+print(a+b+c+d+f) #5개의 자리수를 합한다.
